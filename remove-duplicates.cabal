@@ -1,0 +1,29 @@
+cabal-version:      2.4
+name:               remove-duplicates
+version:            0.1.0.0
+
+synopsis: remove duplicate files
+
+description: a cli tool to remove duplicate files based on their hashes
+
+bug-reports:        s3np41@discord
+
+license:            MIT
+author:             S3NP41-v
+maintainer:         s3np41v@gmail.com
+
+category:           tool
+
+executable rem-dup
+    main-is:          Main.hs
+
+    ghc-options:     -O2 -Wall
+
+    build-depends:    base ^>=4.16.4.0
+                    , cryptonite
+                    , bytestring
+                    , directory
+                    , optparse-applicative
+
+    hs-source-dirs:   app
+    default-language: Haskell2010
